@@ -2,10 +2,10 @@
 
 运行（带窗口）：
     conda activate ai
-    python code.py
+    python learn/A1_仿真循环/A1_参考实现.py
 
 运行（无窗口，只打印结果）：
-    python code.py --headless
+    python learn/A1_仿真循环/A1_参考实现.py --headless
 """
 
 import sys
