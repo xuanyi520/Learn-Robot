@@ -18,3 +18,6 @@ desktop.ini
 *.vsix
 *.mp4
 *.gif
+
+# MuJoCo 调试导出
+MJDATA.TXT
