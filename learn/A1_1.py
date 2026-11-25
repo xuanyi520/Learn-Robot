@@ -10,17 +10,17 @@ xml = """
     <worldbody>
         <geom type="plane" size="5 5 .1"/>
         <body pos="0 0 2">
-          <freejoint/>
-          <geom type="box" size=".2 .2 .2"/>
+            <freejoint/>
+            <geom type="box" size=".2 .2 .2"/>
         </body>
     </worldbody>
 </mujoco>
 """
 
-model = mujoco.MjModel.from_xml_string(xml)  # pyright: ignore[reportAttributeAccessIssue]
-data = mujoco.MjData(model)  # pyright: ignore[reportAttributeAccessIssue]
+model = mujoco.MjModel.from_xml_string(xml)
+data = mujoco.MjData(model)
 
 for i in range(1000):
-    mujoco.mj_step(model, data)  # pyright: ignore[reportAttributeAccessIssue]
+    mujoco.mj_step(model, data)
 
 print(data.qpos)
